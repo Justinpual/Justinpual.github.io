@@ -2,33 +2,33 @@
 <html>
     <head>
         <title>justins website </title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
-    <body>
-        <!--all content goes here-->
-        <div>
+    <body><!--All content goes here-->
+        <div id="all-contents">
             <nav>
                 <h1>My great website</h1>
-                    <ul>
-                        <li>
+                    <ul id="nav-ul">
+                        <li class="nav-li">
                             <a href="index.html"> Home </a>
                         </li>
-                        <li>
+                        <li class="nav-li">
                             <a href="portfolio.html"> portfolio</a>
                         </li>
                     </ul>
             </nav>
         <main>
             <!--sidebar section-->
-            <div>
-                <img src="data:image/jpeg;base64,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">
+            <div class="sidebar">
+                <img class="sidebar-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbU4ht7bn346T1wI2uQ6ePDdpODym0v_QGQq7XMfv5qn42g87C5h8gn78JDL5xCxET9yo:https://www.ge.com/research/sites/default/files/styles/hero_banner/public/images/capabilities/2020-08/pcb3.jpg%3Fitok%3D_WvwlMts&usqp=CAU">
             </div>
             <!--content section--> 
-            <div>
+            <div class="content">
                 <h2>justin</h2>
                 <p>student at mandeville high</p>
                 <!--Interests section-->
-            </div>
+        <div id="interests">
                 <h3>Interests</h3>
                 <ul>
                     <li>shoes</li>
